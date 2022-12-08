@@ -227,6 +227,25 @@ class Character extends FlxSprite
 				addOffset("singLEFT", -30);
 				addOffset("singDOWN", -40, -94);
 				playAnim('idle');
+				
+		  case 'ayed':
+				tex = Paths.getSparrowAtlas('characters/ayed');
+				frames = tex;
+
+				animation.addByPrefix('idle', "ayed idle", 16, false);
+				animation.addByPrefix('singUP', "ayed Up", 16, false);
+				animation.addByPrefix('singDOWN', "ayed Down", 16, false);
+				animation.addByPrefix('singLEFT', 'ayed Left', 16, false);
+				// it's me on Kade engine yayyy
+				animation.addByPrefix('singRIGHT', 'ayed Right', 16, false);
+
+				addOffset('idle', 0, 10);
+				addOffset("singUP", 3, 15);
+				addOffset("singRIGHT", 7, 14);
+				addOffset("singLEFT", -9, 10);
+				addOffset("singDOWN", -12, 16);
+
+				playAnim('idle');
 			case 'pico':
 				tex = Paths.getSparrowAtlas('characters/Pico_FNF_assetss');
 				frames = tex;
